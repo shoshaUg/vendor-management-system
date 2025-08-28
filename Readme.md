@@ -21,4 +21,17 @@ A complete full-stack CRUD application for managing vendors, built with Node.js,
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/vendor-management-system.git
+   git clone https://github.com/shoshaug/vendor-management-system.git
+## Development Setup
+
+1. Install Node.js from https://nodejs.org/
+2. Clone this repository
+3. Install dependencies: `npm install`
+4. Start development server: `node server.js`
+5. The app will be available at http://localhost:3000
+
+## API Endpoints
+- GET /api/vendors - Get all vendors
+- POST /api/vendors - Create new vendor
+- PUT /api/vendors/:id - Update vendor
+- DELETE /api/vendors/:id - Delete vendor
