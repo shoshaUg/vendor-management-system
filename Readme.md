@@ -35,3 +35,31 @@ A complete full-stack CRUD application for managing vendors, built with Node.js,
 - POST /api/vendors - Create new vendor
 - PUT /api/vendors/:id - Update vendor
 - DELETE /api/vendors/:id - Delete vendor
+
+📁 Project Structure
+text
+vendor-management-system/
+├── database.js          # Database setup and initialization
+├── server.js           # Main server file with API routes
+├── package.json        # Project dependencies and configuration
+├── vendors.db          # SQLite database (created automatically)
+├── .gitignore         # Files to exclude from Git
+├── README.md          # This file!
+└── public/            # Frontend files
+    ├── index.html     # Main HTML page with form and table
+    ├── style.css      # CSS styling for the interface
+    └── script.js      # JavaScript for dynamic functionality
+👥 Group Members
+..........
+..........
+.........
+.......
+...........
+.......
+
+📞 Support
+If you need help setting up or running the project, contact:
+
+Shadrack: 0534268869/stkaddofo@st.ug.edu.gh
+
+
