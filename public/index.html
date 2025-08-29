@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+    <div class="logo-container">
+        <img src="UG_Logo.png" alt="Vendor System Logo" class="logo">
+        
+        <h1>Vendor Management System</h1><i class="fas fa-store logo-icon"></i>
+    </div>
+</header>
+        
+        <main>
+            <!-- Vendor Form -->
+            <section class="vendor-form">
+                <h2 id="form-title">Add New Vendor</h2>
+                <form id="vendorForm">
+                    <input type="hidden" id="vendorId">
+                    
+                    <div class="form-group">
+                        <label for="name">Vendor Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact_email">Contact Email</label>
+                        <input type="email" id="contact_email" name="contact_email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" id="phone_number" name="phone_number">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" id="submitBtn">Add Vendor</button>
+                        <button type="button" id="cancelBtn" style="display: none;">Cancel</button>
+                    </div>
+                </form>
+            </section>
+            
+            <!-- Vendors List -->
+            <section class="vendors-list">
+                <h2>Vendors</h2>
+                <div id="loading">Loading vendors...</div>
+                <div id="error" class="error" style="display: none;"></div>
+                
+                <table id="vendorsTable" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                            <th>Date Created</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="vendorsTableBody"></tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
